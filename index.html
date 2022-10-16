@@ -8,7 +8,9 @@
 
     <style>
 
-        h1{
+        /* Simple */
+
+        /* h1{
             color: blue;
         }
         p{
@@ -21,7 +23,38 @@
 
         .common {   
             background-color: lightgreen;
+        } */
+
+
+        /* Combinator */
+        .common p{
+            color: tomato;
         }
+
+        .common > p{
+            color: blue;
+        }
+        .common + div{
+            color: yellow;
+        }
+
+        .common ~ div{
+            color: red  ;
+        }
+
+        /* Attribute */
+        label[for]{
+            color: darkblue;
+        }
+
+        label[for="p"]{
+            background-color: pink;
+        }
+
+        input[type]{
+            background-color: black;
+        }
+        
 
     </style>
 
@@ -52,8 +85,20 @@
         <p>Introduction</p>
     </div>
 
-    <div class="common commom2">Hello</div>
-    <div></div>
+    <div class="common commom2">
+        <div class="something1">Something</div>
+        <div class="something2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, fugit!</p>
+        </div>
+        <div class="something3">Something</div>
+        <p>Inner Paragraph</p>
+        
+    </div>
+
+    <p>heyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</p>
+    <div class="Sibling"> I am Sibling</div>
+
+
     <div class="common">Hello</div>
     <div></div>
     <div class="common2">Diff color Hello</div>
