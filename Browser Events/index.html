@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+
+        .pink {
+        background: pink;
+        height: 20rem;
+        width: 20rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .blue{
+        width: 10rem;
+        height: 10rem;
+        margin: 10px;
+        padding: 5px;
+        background: blue;
+        color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="pink">
+        <div class="blue"></div>
+    </div>
+
+    <script>
+
+        let pink = document.querySelector('.pink');
+        pink.addEventListener('click', function(e){
+            if(e.target === e.currentTarget){
+                alert('pink was clicked');
+
+            }
+           
+        })
+
+    </script>
+    
+</body>
+</html>
